@@ -11,7 +11,6 @@ describe 'Artist' do
     it 'sets the artist name' do
       artist.name = 'King of Pop'
       expect(artist.name).to eq('King of Pop')
-      binding.pry
     end
   end
 
@@ -52,6 +51,7 @@ describe 'Artist' do
       artist.add_song(dirty_diana)
       artist.add_song(billie_jean)
       expect{artist.print_songs}.to output("Dirty Diana\nBillie Jean\n").to_stdout
+      binding.pry
     end
   end
 end
