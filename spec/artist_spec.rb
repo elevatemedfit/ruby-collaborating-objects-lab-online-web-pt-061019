@@ -11,6 +11,7 @@ describe 'Artist' do
     it 'sets the artist name' do
       artist.name = 'King of Pop'
       expect(artist.name).to eq('King of Pop')
+      binding.pry
     end
   end
 
